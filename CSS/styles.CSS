@@ -3,6 +3,7 @@
 * {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root{
@@ -10,23 +11,54 @@
   --color-primary: #131219
 
 }
-
+/* Criando variaveis */
 html, body {
     background-color: var(--bg-body);
 }
 header {
+    /* Mudando a cor de fundo*/
     background-color: var(--color-primary);
     color: #fff;
+    /* Modificando a altura */
+    height: 60px;
+    /* Deixando os itens flexivel*/
+    display: flex;
+    /*alinhando os itens*/
+    align-items: center;
+}
+ h1, h2 ,h3 ,h4 ,h5 , h5{
+    margin: 0;
+ }  
     a{
-        text-decoration: none;
-        color: unset;
-    }
+    text-decoration: none;
+    color: unset;
+}
 
     nav
     {
      display: flex;
      align-items: center;
      justify-content: space-between;
-    }
-
 }
+    /* modificando o nome TEC.002-MOVIES*/
+    nav h1{
+    /* mudando o tamanho da letra*/
+    font-size: 24px;
+    font-weight: 700;
+}
+    /* modificando o nome GitHub*/
+   nav a{
+    /* Mudando o tamanho da letra*/
+    font-size: 12px;
+    font-weight: 400;   
+ }
+
+.link-container {
+  display: flex;
+  align-items: center;  
+ }
+
+ .link-container img{
+    margin-right: 10px;
+ }
+
